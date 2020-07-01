@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>坦克大战</title>
+    <script src="./js/jquery-1.12.4.js"></script>
+    <script src="./js/Grid.js"></script>
+    <link rel="stylesheet" href="./css/map.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/Game.js"></script>
+    <script src="./js/MyTank.js"></script>
+    <script src="./js/NpcTank.js"></script>
+    <script src="./js/MyBullet.js"></script>
+    <script src="./js/NpcBullet.js"></script>
+    <EMBED src="music/qyqx.mp3" width=300 height=0 type=audio/mpeg loop="3" autostart="true" volume="0"></EMBED>
+
+</head>
+
+<body>
+    <div id="box">
+        <div id="map">
+            <!-- 遮罩层 -->
+            <div class="shade">
+                start game
+            </div>
+        </div>
+        <div id='right'>
+            <div class="game-name">
+                TankWar
+            </div>
+            <div class="row">
+                </span><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <span>Npcbullet :</span><span>&nbsp;&nbsp;</span>
+                <select id="Npcbullet">
+                    <option value="50">1</option>
+                    <option value="40">2</option>
+                    <option value="30" selected="selected">3</option>
+                    <option value="20">4</option>
+                    <option value="10">5</option>
+                </select>
+                </span><span>&nbsp;&nbsp;</span>
+                <input type="button" value="set" class="Npcbullet">
+            </div>
+            <div class="row">
+                </span><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <span>Mybullet :</span><span>&nbsp;&nbsp;&nbsp;</span>
+                <select id="Mybullet">
+                    <option value="50">1</option>
+                    <option value="40">2</option>
+                    <option value="30" selected="selected">3</option>
+                    <option value="20">4</option>
+                    <option value="10">5</option>
+                </select>
+                </span><span>&nbsp;&nbsp;</span>
+                <input type="button" value="set" class="Mybullet">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 开始游戏
+        var game = new Game();
+        game.start(); 
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+#box{
+    position: relative;
+}
+
+#right{
+   width: 300px;
+   height: 400px; 
+   position: absolute;
+   left: 1160px;
+   top: 110px;
+   padding: 20px;
+   border: 2px solid #181717;
+}
+#right .game-name{
+    text-align: center;
+    font-size: 26px;
+}
+
+#right .Npcbullet,
+.Mybullet{
+    margin-top: 40px;
+    background-color: #fff;
+}
+
+
+.shade{
+    width: 100%;
+    height: 100%;
+    background-color: #181717;
+    text-align: center;
+    line-height: 600px;
+    font-size: 100px;
+    color: #fff;
+}
